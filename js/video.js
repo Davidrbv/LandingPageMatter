@@ -1,6 +1,6 @@
 function init(){
 
-    const video = document.getElementById('video');
+    const video = document.getElementById('video__view');
     const reproducir = document.getElementById('button-play');
     const full = document.getElementById('button-full');
     const inicio = document.getElementById('button-inicio');
