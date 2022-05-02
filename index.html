@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./assets/cuboLogo.svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/anime.min.js"></script>
+    <title>Matter</title>
+</head>
+
+<item>
+    <!-- Header page -->
+    <header id="header">
+        <!-- Page's navigation bar -->
+        <nav id="nav">
+            <section class="nav__container">
+                <div class="nav__home">
+                    <img class="nav__home--cubo" src="./assets/cuboLogo.svg" alt="Cubo Matter">
+                    <img class="nav__home--matter" src="./assets/matterLogo.svg" alt="Logo Matter">
+                </div>
+                <div class="nav__menu">
+                    <ul class="nav__menu--list">
+                        <li class="nav__menu--item"><a href="#inicio">Inicio</a></li>
+                        <li class="nav__menu--item"><a href="#nosotros">Nosotros</a></li>
+                        <li class="nav__menu--item"><a href="#modulos">Módulos</a></li>
+                        <li class="nav__menu--item"><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="nav__background">
+                    <img class="nav__background--photo" src="assets/fotoPortada.jpg" alt="Foto portada">
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <!-- Main page -->
+    <main id="main">
+
+        <!-- Interfaz del video -->
+        <section id="inicio" class="video">
+            <h2 class="video__title">¿Qué posibilidades ofrece Matter?</h2>
+            <p class="video__title">¡Estas son solo algunas de las posibilidades que podemos ofrecerte!</p>
+            <div class="video__container">
+                <video id="video" poster="assets/poster.png" preload>
+                    <source id="source" src="assets/trailer.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                    <source src="assets/trailer.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                </video>
+                <p id="time"></p>
+                <div class="video__container--controller">
+                    <div class="video__container--group">
+                        <button class="video__container--item" type="button" id="button-play">
+                            <i id="ambos" class="fas fa-play"></i>
+                        </button>
+                        <button class="video__container--item" type="button" id="button-inicio">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                        <button class="video__container--item" type="button" id="button-retrasar">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button class="video__container--item" type="button" id="button-adelantar">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                        <button class="video__container--item" type="button" id="button-bajar">
+                            <i class="fas fa-volume-down"></i>
+                        </button>
+                        <button class="video__container--item" type="button" id="button-subir">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <button class="video__container--item" type="button" id="button-full">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Módulos de la aplicación -->
+        <section class="module__header">
+            <h2 class="video__title">¿Qué aspectos deseas controlar?</h2>
+            <p class="video__title">¡Estos son solo algunos de los módulos de los que podrás disfrutar!</p>
+        </section>
+        <section id="modulos" class="modules">
+            <div class="modules__container">
+                <img src="assets/anterior.svg" class="modules__arrow" id="anterior">
+
+                <section class="modules__item modules__item--show" data-id="1">
+                    <div class="modules__texts">
+                        <h2 class="title">Empleados</h2>
+                        <p class="modules__review">Con este módulo podrás saber que empleados están disponibles, la fecha de contratación, las
+                            horas de trabajo realizadas, el puesto que ocupan, el salario mensual a percibir, e incluso
+                            podrás contactar directamente con ellos a través de la opción Call. Y otras muchas opciones que
+                            podrás ir descubriendo!</p>
+                    </div>
+
+                    <figure>
+                        <img src="assets/empleados.jpg" class="modules__image">
+                    </figure>
+                </section>
+
+                <section class="modules__item" data-id="2">
+                    <div class="modules__texts">
+                        <h2 class="title">Facturas</h2>
+                        <p class="modules__review">¿Dónde van a parar todos esos gastos que se generan del funcionamiento de tu negocio? Aquí podrás almacenar todos los pagos que realices, número de factura, fecha, importe total, estado de la misma.. Información que nos será de gran ayuda cuando queremos decidir entre diferentes proveedores.</p>
+                    </div>
+
+                    <figure>
+                        <img src="assets/facturas.jpg" class="modules__image">
+                    </figure>
+                </section>
+
+                <section class="modules__item" data-id="3">
+                    <div class="modules__texts">
+                        <h2 class="title">Ventas</h2>
+                        <p class="modules__review">Como no podía ser menos, debemos tener una herramiento con la que gestionar la facturación generada por nuestra empresa, llevando una caja diaria de lo que produce nuestro negocio.</p>
+                    </div>
+
+                    <figure>
+                        <img src="assets/contabilidad.jpg" class="modules__image">
+                    </figure>
+                </section>
+
+                <section class="modules__item" data-id="4">
+                    <div class="modules__texts">
+                        <h2 class="title">Contabilidad</h2>
+                        <p class="modules__review">Contaremos con un módulo específico donde podremos ver gráficos sobre la situación actual de la empresa, haciendo balance de los diferentes gastos e ingresos que obtendremos del buen devenir del negocio.</p>
+                    </div>
+
+                    <figure>
+                        <img src="assets/ventas.jpg" class="modules__image">
+                    </figure>
+                </section>
+
+
+                <img src="assets/siguiente.svg" class="modules__arrow" id="siguiente">
+            </div>
+        </section>
+
+        <!-- Quienes somos -->
+        <section id="nosotros" class="aboutus">
+            <h2 class="title">¿Quiénes somos?</h2>
+            <p class="aboutus__paragraph">¿Tienes dudas sobre nuestros servicios? Consulta las preguntas más habituales.</p>
+            <section class="aboutus__container">
+                <article class="aboutus__padding">
+                    <div class="aboutus__answer">
+                        <h3 class="aboutus__title">¿Qué es Matter?
+                            <span class="aboutus__arrow">
+                                <img src="assets/arrow.svg" class="aboutus__img">
+                            </span>
+                        </h3>
+
+                        <p class="aboutus__show">Matter es una herramienta enfocada en la gestión y control de nuestro
+                            negocio de forma fácil y sencilla en la palma de nuestra mano. Con está aplicación, podrás
+                            obtener la información necesaria para la toma de deciones que tanta relevancia cobra a la
+                            hora de desarrollar nuestra labor empresarial</p>
+                    </div>
+                </article>
+
+                <article class="aboutus__padding">
+                    <div class="aboutus__answer">
+                        <h3 class="aboutus__title">¿Comó nació la idea?
+                            <span class="aboutus__arrow">
+                                <img src="assets/arrow.svg" class="aboutus__img">
+                            </span>
+                        </h3>
+
+                        <p class="aboutus__show">Tras muchos años de experiencia empresarial, y más concretamente en el
+                            sector de la hostelería, llegamos a la conclusión de que, las herramientas actuales para la
+                            gestión de nuestro negocio, no cubrían las necesidades verdaderamente importantes que de la
+                            forma
+                            más básica, pudiera ayudarnos a la toma de decisiones.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="aboutus__padding">
+                    <div class="aboutus__answer">
+                        <h3 class="aboutus__title">¿Qué nos diferencia en nuestro sector?
+                            <span class="aboutus__arrow">
+                                <img src="assets/arrow.svg" class="aboutus__img">
+                            </span>
+                        </h3>
+
+                        <p class="aboutus__show">Somos sabedores de la cantidad y calidad de herramientas de que dispone
+                            el mercado para gestionar nuestro negocio, pero hay una cosa que hace nuestra aplicación
+                            aventaje al resto, su simplicidad. Utilizamos la información más básica del desarrollo
+                            habitual del negocio para gestionar el día a día en nuestra empresa. </p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer page -->
+    <footer id="footer">
+        <section class="footer__info">
+            <div class="footer__red">
+                <a href="https://www.youtube.com/" class="footer__icons"><img src="assets/youtube.svg"
+                        class="footer__img"></a>
+                <a href="https://twitter.com/" class="footer__icons"><img src="assets/twitter.svg"
+                        class="footer__img"></a>
+                <a href="https://es-es.facebook.com/" class="footer__icons"><img src="assets/facebook.svg"
+                        class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">All Rights Reserved &copy; David Rodriguez- Barbero Verdera</h3>
+            <h4 class="footer__copyright">I.E.S Campanillas</h4>
+        </section>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/aboutus.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/slider.js"></script>
+</item>
+
+</html>
