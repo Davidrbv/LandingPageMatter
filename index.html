@@ -13,9 +13,11 @@
     <title>Matter</title>
 </head>
 
-<item>
+<body>
+
     <!-- Header page -->
     <header id="header">
+
         <!-- Page's navigation bar -->
         <nav id="nav">
             <section class="nav__container">
@@ -23,11 +25,15 @@
                     <img class="nav__home--cubo" src="./assets/cuboLogo.svg" alt="Cubo Matter">
                     <img class="nav__home--matter" src="./assets/matterLogo.svg" alt="Logo Matter">
                 </div>
+                <div class="nav__home--responsive">
+                    <img class="nav__home--matter" src="./assets/logoCompleto.svg" alt="Logo Matter">
+                </div>
                 <div class="nav__menu">
+                    <audio id="audio" src="./assets/sonidoClick.mp3" preload></audio>
                     <ul class="nav__menu--list">
                         <li class="nav__menu--item"><a href="#inicio">Inicio</a></li>
                         <li class="nav__menu--item"><a href="#nosotros">Nosotros</a></li>
-                        <li class="nav__menu--item"><a href="#modulos">Módulos</a></li>
+                        <li class="nav__menu--item"><a href="#modular">Módulos</a></li>
                         <li class="nav__menu--item"><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -80,7 +86,7 @@
         </section>
 
         <!-- Módulos de la aplicación -->
-        <section class="module__header">
+        <section id="modular" class="module__header">
             <h2 class="video__title">¿Qué aspectos deseas controlar?</h2>
             <p class="video__title">¡Estos son solo algunos de los módulos de los que podrás disfrutar!</p>
         </section>
@@ -91,12 +97,13 @@
                 <section class="modules__item modules__item--show" data-id="1">
                     <div class="modules__texts">
                         <h2 class="title">Empleados</h2>
-                        <p class="modules__review">Con este módulo podrás saber que empleados están disponibles, la fecha de contratación, las
+                        <p class="modules__review">Con este módulo podrás saber que empleados están disponibles, la
+                            fecha de contratación, las
                             horas de trabajo realizadas, el puesto que ocupan, el salario mensual a percibir, e incluso
-                            podrás contactar directamente con ellos a través de la opción Call. Y otras muchas opciones que
+                            podrás contactar directamente con ellos a través de la opción Call. Y otras muchas opciones
+                            que
                             podrás ir descubriendo!</p>
                     </div>
-
                     <figure>
                         <img src="assets/empleados.jpg" class="modules__image">
                     </figure>
@@ -105,9 +112,11 @@
                 <section class="modules__item" data-id="2">
                     <div class="modules__texts">
                         <h2 class="title">Facturas</h2>
-                        <p class="modules__review">¿Dónde van a parar todos esos gastos que se generan del funcionamiento de tu negocio? Aquí podrás almacenar todos los pagos que realices, número de factura, fecha, importe total, estado de la misma.. Información que nos será de gran ayuda cuando queremos decidir entre diferentes proveedores.</p>
+                        <p class="modules__review">¿Dónde van a parar todos esos gastos que se generan del
+                            funcionamiento de tu negocio? Aquí podrás almacenar todos los pagos que realices, número de
+                            factura, fecha, importe total, estado de la misma.. Información que nos será de gran ayuda
+                            cuando queremos decidir entre diferentes proveedores.</p>
                     </div>
-
                     <figure>
                         <img src="assets/facturas.jpg" class="modules__image">
                     </figure>
@@ -116,9 +125,10 @@
                 <section class="modules__item" data-id="3">
                     <div class="modules__texts">
                         <h2 class="title">Ventas</h2>
-                        <p class="modules__review">Como no podía ser menos, debemos tener una herramiento con la que gestionar la facturación generada por nuestra empresa, llevando una caja diaria de lo que produce nuestro negocio.</p>
+                        <p class="modules__review">Como no podía ser menos, debemos tener una herramiento con la que
+                            gestionar la facturación generada por nuestra empresa, llevando una caja diaria de lo que
+                            produce nuestro negocio.</p>
                     </div>
-
                     <figure>
                         <img src="assets/contabilidad.jpg" class="modules__image">
                     </figure>
@@ -127,9 +137,10 @@
                 <section class="modules__item" data-id="4">
                     <div class="modules__texts">
                         <h2 class="title">Contabilidad</h2>
-                        <p class="modules__review">Contaremos con un módulo específico donde podremos ver gráficos sobre la situación actual de la empresa, haciendo balance de los diferentes gastos e ingresos que obtendremos del buen devenir del negocio.</p>
+                        <p class="modules__review">Contaremos con un módulo específico donde podremos ver gráficos sobre
+                            la situación actual de la empresa, haciendo balance de los diferentes gastos e ingresos que
+                            obtendremos del buen devenir del negocio.</p>
                     </div>
-
                     <figure>
                         <img src="assets/ventas.jpg" class="modules__image">
                     </figure>
@@ -143,7 +154,8 @@
         <!-- Quienes somos -->
         <section id="nosotros" class="aboutus">
             <h2 class="title">¿Quiénes somos?</h2>
-            <p class="aboutus__paragraph">¿Tienes dudas sobre nuestros servicios? Consulta las preguntas más habituales.</p>
+            <p class="aboutus__paragraph">¿Tienes dudas sobre nuestros servicios? Consulta las preguntas más habituales.
+            </p>
             <section class="aboutus__container">
                 <article class="aboutus__padding">
                     <div class="aboutus__answer">
@@ -193,6 +205,60 @@
                 </article>
             </section>
         </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <div class="contacto__header">
+                <h2>¿Contactamos?</h2>
+                <p>Si quieres más información sobre nuestros productos, no dudes en escribirnos.
+                </p>
+            </div>
+            <div class="contacto__loader" id="spinner">
+                <svg width="100" height="100" viewBox="0 0 50 50">
+                    <path fill="#790909"
+                        d="M25,5A20.14,20.14,0,0,1,45,22.88a2.51,2.51,0,0,0,2.49,2.26h0A2.52,2.52,0,0,0,50,22.33a25.14,25.14,0,0,0-50,0,2.52,2.52,0,0,0,2.5,2.81h0A2.51,2.51,0,0,0,5,22.88,20.14,20.14,0,0,1,25,5Z">
+                        <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25"
+                            dur="0.8s" repeatCount="indefinite" />
+                    </path>
+                </svg>
+            </div>
+            <div class="contacto__form" id="formulario">
+                <div class="contacto__form--body">
+                    <h1 class="form__header">Formulario de contacto</h1>
+                    <form method="post">
+                        <p class="form__body--item">
+                            <label for="email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                placeholder="Escribe tu Email..">
+                        </p>
+                        <p class="form__body--item">
+                            <label for="mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" id="mensaje" required="obligatorio"
+                                placeholder="Deja aquí tu comentario...">
+                                </textarea>
+                        </p>
+
+                        <button type="button" name="enviar_formulario" id="enviar">
+                            <p>Enviar</p>
+                        </button>
+
+                        <p class="form__body--item">
+                            <span class="obligatorio"> * </span>Los campos son obligatorios.
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+            <div class="contacto__ok" id="gracias">
+                <p class="contacto__ok--text" id="contact_text">
+                    ¡Gracias!
+                </p>
+            </div>
+        </section>
     </main>
 
     <!-- Footer page -->
@@ -206,15 +272,17 @@
                 <a href="https://es-es.facebook.com/" class="footer__icons"><img src="assets/facebook.svg"
                         class="footer__img"></a>
             </div>
-            <h3 class="footer__copyright">All Rights Reserved &copy; David Rodriguez- Barbero Verdera</h3>
+            <h3 class="footer__copyright">All Rights Reserved &copy; David Rodriguez - Barbero Verdera</h3>
             <h4 class="footer__copyright">I.E.S Campanillas</h4>
         </section>
     </footer>
 
     <!-- Scripts -->
+    <script src="js/audio.js"></script>
     <script src="js/aboutus.js"></script>
     <script src="js/video.js"></script>
     <script src="js/slider.js"></script>
-</item>
+    <script src="js/form.js"></script>
+</body>
 
 </html>

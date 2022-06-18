@@ -1,7 +1,7 @@
 <h2 align="center">PROYECTO GRADO SUPERIOR EN DESARROLLO DE APLICACIONES MULTIPLATAFORMA I.E.S. CAMPANILLAS 21/22</h2>
 <div align="center">
   <img src="assets/logoCompleto.svg" alt="Logo" width="200" height="250">
-  <h3 align="center">Landing page Matter</h3>
+  <h3 align="center">Landing Page Matter</h3>
 </div>
 
 ## INTRODUCCIÓN
@@ -19,8 +19,13 @@ empresa y nuestros productos.
 Esta parte del proyecto será desarrollada integramente con CSS, HTML y Javascript, sin hacer uso de librería o componentes
 ajenos a los tres elementos mencionados, salvo en el caso del tratamiento en elementos de tipo SVG y Canvas.
 
+## DOCUMENTO DE DISEÑO
+
+- <a href="media/MatterFigmaDRBV.pdf"><p>Diseño Pdf</p></a>
+
 ## DIARIO DE TRABAJO
-<a href="https://github.com/Davidrbv/Matters/blob/master/README.md"><p>Pulse aquí.</p></a>
+
+- <a href="https://github.com/Davidrbv/Matters/blob/master/README.md"><p>Pulse aquí.</p></a>
 
 ## BIBLIOGRAFÍA
   - <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><p>Javascript</p></a>
@@ -33,9 +38,10 @@ ajenos a los tres elementos mencionados, salvo en el caso del tratamiento en ele
   - <a href="https://cssgradient.io//"><p>CssGradient</p></a>
   - <a href="https://https://dribbble.com/.io//"><p>Dribbble</p></a>
 
-## Mockup App Inicial
+## Mockup App
 
 <img src="media/portada.png" alt="Portada">
 <img src="media/video.png" alt="Video">
 <img src="media/modulos.png" alt="Modulos">
-<img src="media/aboutFooter.png" alt="AboutFooter">
+<img src="media/nosotros.png" alt="Nosotros">
+<img src="media/formFooter.png" alt="Nosotros">

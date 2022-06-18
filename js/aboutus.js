@@ -16,7 +16,7 @@
                 height = answer.scrollHeight;
             }
 
-            answer.style.height = `${height}px`; //Modificamos el height
+            answer.style.height = `${height}px`; //Mostramos información
         });
     });
 })();
