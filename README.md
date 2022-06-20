@@ -40,8 +40,18 @@ ajenos a los tres elementos mencionados, salvo en el caso del tratamiento en ele
 
 ## Mockup App
 
+- <p>En esta primera imagen se puede observar la barra de navegación de la página, desde la que tendremos acceso a los diferentes elementos que componen la parte más comercial del proyecto.</p>
 <img src="media/portada.png" alt="Portada">
+
+- <p>Haciendo Scroll, o pinchando sobre el botón inicio, llegaremos al video de presentación de la aplicación, donde contaremos con los botones para controlar la reproducción del medio, así como su ampliación y reducción.</p>
 <img src="media/video.png" alt="Video">
+
+- <p>En la siguiente imagen se muestra el slider que nos permitirá obtener información sobre los diferentes servicios que nos proporciona el uso de nuestra aplicación, y las ventajas que pueden ofrecer a nuestros clientes.</p>
 <img src="media/modulos.png" alt="Modulos">
+
+
+- <p>A continuación, se muestra la imagen de la sección de información relativa a la empresa. Contiene un desplegable por cada uno de los elementos que componen dicha sección donde podremos encontrar información de relevancia sobre la empresa, la idea de negocio y su diferenciación en el mercado.</p>
 <img src="media/nosotros.png" alt="Nosotros">
+
+- <p>Para finalizar, podemos observar el formulario de contacto a través del cual, los clientes o futuros clientes pueden solicitar información adicional en caso de estar interesados en el producto.</p>
 <img src="media/formFooter.png" alt="Nosotros">
