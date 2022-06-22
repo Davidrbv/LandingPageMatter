@@ -5,6 +5,9 @@ function init() {
     const enviar = document.getElementById('enviar');
     const gracias = document.getElementById('gracias');
     const texto = document.getElementById('contact_text');
+    const mensaje = document.getElementById('mensaje');
+    const email = document.getElementById('email');
+
     let time = 0;
     let mostrarTexto;
 
@@ -17,6 +20,8 @@ function init() {
             spinner.style.display = "none";
             gracias.style.display = "block"
             mostrarTexto = window.setInterval(agradecimiento, 30);
+            mensaje.value = '';
+            email.value='';
         }, 2000);
     });
 

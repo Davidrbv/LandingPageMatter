@@ -19,7 +19,7 @@ empresa y nuestros productos.
 Esta parte del proyecto será desarrollada integramente con CSS, HTML y Javascript, sin hacer uso de librería o componentes
 ajenos a los tres elementos mencionados, salvo en el caso del tratamiento en elementos de tipo SVG y Canvas.
 
-## DOCUMENTO DE DISEÑO
+## DOCUMENTO DISEÑO PROTOTIPO FIGMA
 
 - <a href="media/MatterFigmaDRBV.pdf"><p>Diseño Pdf</p></a>
 
